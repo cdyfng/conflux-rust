@@ -205,6 +205,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "bigdecimal"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "460825c9e21708024d67c07057cd5560e5acdccac85de0de624a81d3de51bacb"
+dependencies = [
+ "num-bigint",
+ "num-integer",
+ "num-traits",
+]
+
+[[package]]
 name = "bindgen"
 version = "0.53.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -671,6 +682,7 @@ name = "client"
 version = "0.6.0"
 dependencies = [
  "app_dirs",
+ "bigdecimal",
  "blockgen",
  "cfx-bytes",
  "cfx-types",
@@ -703,6 +715,7 @@ dependencies = [
  "metrics",
  "mio",
  "network",
+ "num-bigint",
  "order-stat",
  "panic_hook",
  "parking_lot 0.10.0",
